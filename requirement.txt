@@ -1,0 +1,6 @@
+robotframework
+robotframework-seleniumlibrary
+docutils
+webdrivermanager
+selenium
+robotframework-autorecorder

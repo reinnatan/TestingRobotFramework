@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20230728 09:06:27.240" rpa="false" schemaversion="4">
+<suite id="s1" name="QuickStart" source="/Users/reinhart/Documents/TestingRobot/QuickStart.robot">
+<test id="s1-t1" name="Open Browser To Login Page" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230728 09:06:30.562" level="INFO">Opening browser 'Chrome' to base url 'https://www.tokopedia.com'.</msg>
+<status status="PASS" starttime="20230728 09:06:30.561" endtime="20230728 09:07:43.567"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@aria-label="Cari di Tokopedia"]</arg>
+<arg>remote control</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230728 09:07:43.572" level="INFO">Typing text 'remote control' into text field '//*[@aria-label="Cari di Tokopedia"]'.</msg>
+<status status="PASS" starttime="20230728 09:07:43.569" endtime="20230728 09:08:00.929"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@aria-label="Cari di Tokopedia"]</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230728 09:08:00.931" level="INFO">Sending key(s) ('RETURN',) to //*[@aria-label="Cari di Tokopedia"] element.</msg>
+<msg timestamp="20230728 09:08:03.616" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20230728 09:08:03.616" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230728 09:08:00.929" endtime="20230728 09:08:11.618"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230728 09:08:31.621" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20230728 09:08:11.619" endtime="20230728 09:08:31.623"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>Open Browser To Login Page</arg>
+<doc>There is no need to execute this keyword manually.</doc>
+<msg timestamp="20230728 09:08:32.334" level="INFO" html="true">&lt;a href="recording_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230728 09:08:31.625" endtime="20230728 09:08:32.334"/>
+</kw>
+<status status="PASS" starttime="20230728 09:06:28.422" endtime="20230728 09:08:31.623"/>
+</test>
+<doc>Simple example using SeleniumLibrary</doc>
+<status status="PASS" starttime="20230728 09:06:27.241" endtime="20230728 09:08:32.335"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="QuickStart">QuickStart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
